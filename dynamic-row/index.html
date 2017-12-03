@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 10px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    table, tr, td, th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    input {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <table id="table">
+    <tr>
+      <th>name</th>
+      <th>email</th>
+    </tr>
+    <tr>
+      <td>Shibu</td>
+      <td>shibu@gmail.com</td>
+    </tr>
+  </table>
+  <input type="text" name="name" id='name' placeholder="Enter your name" >
+  <input type="text" name="email" id='email' placeholder="Enter your email"> 
+  <button onclick="addRow()">Add row</button>
+  <script src="dynamic-row.js"></script>
+</body>
+</html>

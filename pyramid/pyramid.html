@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pyramid</title>
+</head>
+<body>
+<input type="text" name="" id="number"> <button onclick="pyramid()">Click to see your number pyramid</button>
+<br>
+<div id="result"></div>
+
+<script>
+    function pyramid(){
+        var number = document.getElementById('number').value;
+        var div_result = document.getElementById('result');
+        var result = "";
+        for(var i = 1; i <= number; i++){
+            var star = "";
+            for(var j = 0; j < number - i; j++){
+                star = star + '&#160;&#160;';
+            }
+            for (var k = 0; k < 2 * i -1; k++){
+                star = star + "*"
+            }
+            result  += '<br>' +  star;
+        }
+        div_result.innerHTML = result;
+        console.log(number);
+    }
+
+</script>
+</body>
+</html>
